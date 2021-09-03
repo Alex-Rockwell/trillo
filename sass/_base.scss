@@ -19,6 +19,10 @@
   --line: solid 1px var(--color-gray-light-3);
 }
 
+$bp-largest: 75em;
+$bp-large: 68.75em;
+$bp-medium: 56.25em;
+
 *,
 *::before,
 *::after {
@@ -31,6 +35,10 @@
 html {
   font-size: 62.5%;
   box-sizing: border-box;
+
+  @media only screen and (max-width: $bp-large) {
+    font-size: 50%;
+  }
 }
 
 body {
@@ -43,5 +51,4 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   min-height: 100vh;
-
 }
